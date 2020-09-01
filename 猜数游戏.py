@@ -1,7 +1,7 @@
 # coding: gbk
 from random import randint
 num = randint(1,1000)
-print('²Â²ÂÕâ¸öÊıÊÇ¼¸?£¨²»ÏëÍæÁË»Ø-1)')
+print('çŒœçŒœè¿™ä¸ªæ•°æ˜¯å‡ ?ï¼ˆä¸æƒ³ç©äº†å›-1)')
 bingo = False
 count = 0
 
@@ -11,27 +11,27 @@ while bingo == False:
     num1 = 10+num
 
     if answer<num:
-        print(str(answer) + 'Ì«Ğ¡ÁË!')
+        print(str(answer) + 'å¤ªå°äº†!')
         num = num+10
         
     if answer>num:
-        print(str(answer) + 'Ì«´óÁË')
+        print(str(answer) + 'å¤ªå¤§äº†')
         num = num+5
    
     if answer==num1:
-        print(str(answer) + '½Ó½üÁË')
+        print(str(answer) + 'æ¥è¿‘äº†')
         num = num+6
 
     if answer==-1:
-        print(str(num) +  'ÊÇÕıÈ·µÄ´ğ°¸,ÓÎÏ·Ê§°Ü')
+        print(str(num) +  'æ˜¯æ­£ç¡®çš„ç­”æ¡ˆ,æ¸¸æˆå¤±è´¥')
         bingo = True
 
-    if count==100:
-        print('ÓÎÏ·Ê§°Ü')
+    if count==50:
+        print('æ¸¸æˆå¤±è´¥')
         bingo = True
         
     if answer==num:
-        print('´ğ¶ÔÁË,'+ str(answer) +' ÊÇÕıÈ·µÄ´ğ°¸')
+        print('ç­”å¯¹äº†,'+ str(answer) +' æ˜¯æ­£ç¡®çš„ç­”æ¡ˆ')
         bingo = True
 
 print(count)
